@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        {% for item in data %}
+        <h1>item.cate</h1>
+        {% for sub in item.subcate %}
+        <h2>sub.subcate</h2>
+        {% for site in sub.sites %}
+        <p>site</p>
+        {% endfor %}
+        {% endfor %}
+        {% endfor %}
+    </body>
+</html>
