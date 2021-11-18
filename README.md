@@ -14,8 +14,11 @@
 # 安装运行
 
 > git clone https://github.com/Quanfita/QWebStack.git  
+> 
 > cd QWebStack  
+> 
 > pip install -r requirements.txt  
+> 
 > python manage.py runserver
 
 默认使用sqlite，已有数据，如需要导出到MySQL或者其他数据库，使用以下命令导出
@@ -25,7 +28,9 @@
 然后，修改QWebStack/settings.py，将DATABASES修改为MySQL的相关配置，然后使用以下命令
 
 > python manage.py makemigrations
+> 
 > python manage.py migrate
+> 
 > python manage.py loaddata data.json
 
 最后运行即可
